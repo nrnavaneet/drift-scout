@@ -2,9 +2,6 @@
 
 Drift Scout is a small but production-ready reference project for modeling
 infrastructure drift detection, remediation simulation, and reporting workflows.
-It is designed for the Ambiguous Coding Task project to exercise reasoning in a
-Python-based DevOps/infrastructure context while remaining realistic and
-approachable.
 
 ### Highlights
 - Python 3.10+ with a modern `pyproject.toml` build
