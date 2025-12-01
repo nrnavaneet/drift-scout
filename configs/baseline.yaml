@@ -1,0 +1,30 @@
+environment: production
+schedule: "0 */2 * * *"
+metadata:
+  region: us-east-1
+  squad: platform-foundations
+notifications:
+  slack_webhook: "https://hooks.slack.com/services/T00000000/B00000000/EXAMPLE"
+  email:
+    - sre@example.com
+services:
+  - name: web-edge
+    owner: edge-oncall
+    control_hash: "sha256:7d9c88"
+    severity: critical
+    metadata:
+      fleet: "alb"
+      min_hosts: 8
+  - name: payments-api
+    owner: payments
+    control_hash: "sha256:12ab99"
+    severity: 4
+    metadata:
+      pci_scope: true
+  - name: analytics-etl
+    owner: data-engineering
+    control_hash: "sha256:aa1188"
+    severity: moderate
+    metadata:
+      schedule: hourly
+

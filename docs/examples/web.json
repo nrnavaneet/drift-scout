@@ -1,0 +1,21 @@
+[
+  {
+    "service": "web-edge",
+    "checksum": "sha256:deviation",
+    "tags": {"env": "prod", "region": "us-east-1"},
+    "drift_score": 3.7
+  },
+  {
+    "service": "payments-api",
+    "checksum": "sha256:12ab99",
+    "tags": {"env": "prod", "tier": "api"},
+    "drift_score": 0.0
+  },
+  {
+    "service": "analytics-etl",
+    "checksum": "sha256:bb7788",
+    "tags": {"env": "prod", "batch": "hourly"},
+    "drift_score": 2.1
+  }
+]
+
